@@ -38,7 +38,7 @@
 }
 
 html {
-    font-size: 60%;
+    font-size: 60px;
     overflow-x: hidden;
 }
 
@@ -137,7 +137,7 @@ span {
     position: relative;
     top: 3rem;
     width: 50vh;
-    border-radius: 60%;
+    border-radius: 45%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
@@ -470,7 +470,7 @@ span {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -481,7 +481,7 @@ span {
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
-    transition: ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .project-box:hover {
@@ -701,6 +701,7 @@ footer .social {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 5rem;
     }
+    
 }
 
 @media(max-width: 991px) {
@@ -728,6 +729,45 @@ footer .social {
 
     .projects {
         padding-bottom: 7rem;
+    }
+    .project-box {
+        background-color: var(--main-color);
+        height: 250px;
+        border-radius: 3rem;
+        border: 5px solid transparent;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+    }
+    
+    .project-box:hover {
+        background-color: white;
+        color: black;
+        border: 5px solid var(--main-color);
+        transform: scale(1.03);
+    }
+    
+    .project-box .project-info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-height: 80px;
+        justify-content: left;
+        align-items: baseline;
+        padding: 4.5rem 4.5rem;
+    }
+    
+    .project-info h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+    
+    .project-info p {
+        font-size: 1.31rem;
+        font-weight: 500;
+        max-height: 70px;
+        line-height: 1.2;
+        margin: auto;
     }
     .skills-container{
         grid-template-columns: repeat(2,1fr);
